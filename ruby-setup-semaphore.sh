@@ -2,8 +2,8 @@
 
 . /home/runner/.bash_profile
 
-ruby_version=${1:-"2.3.1"}
-gem_version=${2:-"2.6.14"}
+ruby_version=${1:-"2.5.3"}
+gem_version=${2:-"2.7.6"}
 ruby_archive="$ruby_version.tar.gz"
 ruby_install_path="/home/runner/.rbenv/versions/$ruby_version"
 
