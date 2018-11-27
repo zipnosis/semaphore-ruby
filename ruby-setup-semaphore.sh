@@ -33,7 +33,7 @@ if ! [ $gem_version = "$(gem --version)" ]; then
 fi
 
 echo "Installing bundler..."
-gem install bundler --no-ri --no-rdoc
+yes | gem install bundler --no-ri --no-rdoc
 
 echo "Setup complete."
 echo "-----------------------------------------------"
