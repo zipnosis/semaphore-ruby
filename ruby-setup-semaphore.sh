@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-bundler_version=$(cat Gemfile.lock | grep -A1 "BUNDLED WITH" | grep -oE "\d+\.\d+\.\d+")
+bundler_version=$(cat Gemfile.lock | grep -A1 "BUNDLED WITH" | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
 ruby_version=$(head -n 3 Gemfile | grep -o '[0-9]\.[0-9]\.[0-9]')
 cd ~/.rbenv/plugins/ruby-build && git pull && cd $SEMAPHORE_PROJECT_DIR
 rbenv install $ruby_version -s
